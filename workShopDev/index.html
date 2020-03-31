@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <!--Html
+        hiperText markup language (hiper texto de linguagem marcada)
+    -->
+    <head>
+        <meta charset="utf-8">
+        <title>Casa Criativa</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">     
+    </head>
+
+    <body>
+
+        <div id="caixaPrincipal">
+
+            <section id="intro">
+
+
+                <header>
+                    <img src="img/logoCasaCriativa.png" alt="logo Casa Criativa">
+                </header>
+                
+                <main>
+                    <p>
+                        Ficar em casa em periodos longos, não deve ser nada fácil.
+                    </p>    
+            
+                    <p>
+                        Por isso, iremos catalogar ideais, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
+                    </p>
+            
+                    <P> 
+                        Comece clicando em ver ideais para ver as ideias cadastradas e contribua adicionando a sua idea.
+                    </P>
+                </main>
+
+                <section id="botoes">
+                    <button onclick="onOff()">+ adicionar Ideais</button>
+                    <button class="verIdeias">Ver Ideias</button>
+                </section>
+                
+                <footer>
+                    <p id="rodape">Com ❤ <a href="https://www.rocketseat.com.br">RocketSeat</a></p>
+                </footer>
+            </section>
+
+            <section id="ultimasIdeias">
+
+                <!--Curso de Programacao-->
+                <div class="ideias">
+                    <img
+                        src="https://image.flaticon.com/icons/svg/2729/2729007.svg"
+                        alt="imagemCursoProgramacao">
+                    
+                     <div class="conteudo">
+                         <h3>Curso de Programação</h3>
+                         <p>Estudo</p>
+                        <div class="descricao">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, saepe! Voluptatem, hic aspernatur? Hic adipisci perspiciatis aliquid incidunt, nesciunt illum alias maiores exercitationem omnis rem. Veritatis tempore quasi recusandae eligendi?
+                        </div>
+                        <a href="#">Ir para Ideias</a>
+                     </div>   
+                </div>
+
+                <!--Exercicios-->
+                <div class="ideias">
+                    <img
+                        src="https://image.flaticon.com/icons/svg/2729/2729005.svg"
+                        alt="imagemExercicios">
+                    
+                     <div class="conteudo">
+                         <h3>Exercícios</h3>
+                         <p>Saúde</p>
+                        <div class="descricao">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, saepe! Voluptatem, hic aspernatur? Hic adipisci perspiciatis aliquid incidunt, nesciunt illum alias maiores exercitationem omnis rem. Veritatis tempore quasi recusandae eligendi?
+                        </div>
+                        <a href="#">Ir para Ideias</a>
+                     </div>   
+                </div>
+
+                <!--Meditação-->
+                <div class="ideias">
+                    <img
+                        src="https://image.flaticon.com/icons/svg/2729/2729027.svg"
+                        alt="imagensMeditacao">
+                    
+                     <div class="conteudo">
+                         <h3>Meditação</h3>
+                         <p>Mentalidade</p>
+                        <div class="descricao">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, saepe! Voluptatem, hic aspernatur? Hic adipisci perspiciatis aliquid incidunt, nesciunt illum alias maiores exercitationem omnis rem. Veritatis tempore quasi recusandae eligendi?
+                        </div>
+                        <a href="#">Ir para Ideias</a>
+                     </div>   
+                </div>
+            </section>
+           
+    
+            <!--o script deve ser colocado depois do html-->
+            <script src="script.js"></script>    
+        </div>
+        
+        <!--Modal-->
+
+        <div id="modal" class="hide">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+
+                <form action="#">
+
+                    <div class="inputWrapper">
+                        <label for="title">Título da Ideia</label>
+                        <input type="text" name="title">
+                    </div>
+
+                    <div class="inputWrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category">
+                    </div>
+                    
+                    <div class="inputWrapper">
+                        <label for="image">Link da Imagem</label>
+                        <input type="url" name="image">
+                    </div>
+
+                    <div class="inputWrapper">
+                        <label for="description">Digite uma descrição para essa ideia</label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="inputWrapper">
+                        <label for="link">Link da Ideia</label>
+                        <input type="url" name="link">
+                    </div>
+
+                    <a href="#" onclick="onOff()">Voltar</a>
+                    <button>Salvar</button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </body>
+</html>
